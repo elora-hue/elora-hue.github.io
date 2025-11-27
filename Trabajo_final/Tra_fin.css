@@ -1,0 +1,323 @@
+body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    background-image: url("imgff.jpg");
+    color: #333;
+    /*es para definir el espaciado entre lineas*/
+    line-height: 1.6;
+}
+
+header {
+    background-color: pink;
+    padding: 20px 0;
+    /*es para que el encabezado quede fijo*/
+    position: sticky;
+    top: 0;
+    /*asegura que el enabezado este arriba de otros elementos*/
+    z-index: 100;
+}
+
+header .logo {
+    display: flex;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 500px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #5cb85c;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    /*centra el texto dentro de la lista*/
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Sección Productos */
+#productos {
+    padding: 60px 20px;
+    /*se centra horizontalmente*/
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: green;
+}
+
+.productos-grid {
+    display: grid;
+    /*define las columnas para que se adapten al grilla*/
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /*añade un espacio entre las grilla*/
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.producto img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 90px;
+}
+
+.producto h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #333;
+}
+
+.producto p {
+    color: #666;
+    font-size: 13px;
+    /*es el espacio entre lineas*/
+    line-height: 1.4;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5cb85c;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.producto button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #4cae4c;
+}
+
+/* Sección Servicios */
+#servicios {
+    padding: 60px 20px;
+    /*centra el texto horizontalmente*/
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: green;
+}
+
+.servicios-lista {
+    display: grid;
+    /*define la estructura de las columnas de grilla*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*define el espacio entre las celdas*/
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.servicio h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #333;
+}
+
+.servicio p {
+    color: #666;
+    font-size: 17px;
+}
+
+/* Sección Nosotros */
+#nosotros {
+    padding: 60px 20px;
+    /*es para centrar*/
+    text-align: center;
+}
+
+#nosotros h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: green;
+}
+
+.nosotros-content {
+    display: flex;
+    /*es para centrar*/
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nosotros-content img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.nosotros-texto {
+    text-align: left;
+}
+
+.nosotros-texto h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.nosotros-texto p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: green;
+}
+
+#contacto p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto label {
+    margin-top: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+    background-color: #4cae4c;
+}
+
+/* Pie de página */
+footer {
+    background-color: hotpink;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.footer-info,
+.footer-social {
+    text-align: left;
+}
+
+.footer-info h4,
+.footer-social h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-info p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.footer-social a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#Facebook{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: -40px;
+}
+#Instagram{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: -40px;
+}
+#Twitter{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: -40px;
+}
+#Tiktok{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: -40px;
+}
